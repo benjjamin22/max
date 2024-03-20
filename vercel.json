@@ -1,0 +1,18 @@
+{
+    "version": 2,
+    "builds": [{
+        "src": "./index.js",
+        "use": "@vercel/node"
+    }, {
+        "src": "./public/**",
+        "use": "@vercel/static"
+    }],
+    "headers": [{
+        "source": "./index.js",
+        "headers": [{
+            "key": "Cache-Control",
+            "value": "public,max-age=0,must-revalidate"
+
+        }]
+    }]
+}

@@ -1,0 +1,183 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    background-color: rgb(30, 30, 109);
+    font-size: 16px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    max-width: 98vw;
+    margin: 0 auto;
+    padding: 1rem;
+    background-color: rgb(27, 27, 97);
+}
+
+.text-center {
+    text-align: center;
+    letter-spacing: 3px;
+}
+
+.text-center h3 {
+    background-image: url('/NUASA(IMSU)/rigntrelm.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 105%;
+    position: relative;
+    height: 15rem;
+    margin: -1rem 0;
+}
+
+.title {
+    font-size: 25px;
+    font-family: sans-serif;
+    margin: 0%;
+    margin-bottom: 0%;
+    margin-top: 0%;
+}
+
+.subtitle {
+    display: inline-block;
+    margin: 0px 0 0px;
+    opacity: 0.8;
+    max-width: 100%;
+    margin-left: 20%;
+    margin-top: 25px;
+    margin-bottom: 0px;
+    position: absolute;
+}
+
+.login .container {
+    max-width: 460px;
+    margin: 3rem auto;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 1.25rem;
+    background-color: rgb(30, 30, 109);
+}
+
+.input {
+    appearance: none;
+    display: block;
+    width: 100%;
+    color: #333;
+    border: 1px solid rbg(180, 180, 180);
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 0.25rem;
+}
+
+.slider-wrapper {
+    background-image: url('/NUASA(IMSU)/r6.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 105%;
+    position: relative;
+    height: 20rem;
+    width: auto;
+    animation: slide 20s infinite;
+    margin: 0;
+}
+
+.input.input-error {
+    border: 1px solid red;
+}
+
+.input.input-error:focus {
+    border: 1px solid red;
+}
+
+.input:focus {
+    outline: none;
+    border: 1px solid #0084ff;
+    background-clip: padding-box;
+}
+
+.error-message {
+    font-size: 0.85rem;
+    color: red;
+}
+
+.button {
+    background-color: rgb(0, 183, 255);
+    padding: 1rem;
+    border: none;
+    color: #fff;
+    font-weight: bold;
+    display: block;
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.button:hover {
+    filter: brightness(110%);
+}
+
+.d {
+    flex-direction: column;
+}
+
+.flip {
+    margin: -1;
+    animation: flipdiv 2s infinite;
+}
+
+@keyframes flipdiv {
+    50% {
+        transform: rotateX(180deg);
+    }
+    to {
+        transform: rotateX(360deg);
+    }
+}
+
+@keyframes flipdiv {
+    50% {
+        transform: rotateY(180deg);
+    }
+    to {
+        transform: rotateY(360deg);
+    }
+}
+
+@keyframes slide {
+    13% {
+        background-image: url('./NUASA(IMSU)/r6.jpg');
+    }
+    26% {
+        background-image: url('/NUASA(IMSU)/r2.jpg');
+    }
+    39% {
+        background-image: url('/NUASA(IMSU)/r3.jpg');
+    }
+    52% {
+        background-image: url('/NUASA(IMSU)/r4.jpg');
+    }
+    62% {
+        background-image: url('/NUASA(IMSU)/r5.jpg');
+    }
+    75% {
+        background-image: url('/NUASA(IMSU)/r1.jpg');
+    }
+    88% {
+        background-image: url('/NUASA(IMSU)/r7.jpg');
+    }
+    100% {
+        background-image: url('/NUASA(IMSU)/r8.jpg');
+    }
+}

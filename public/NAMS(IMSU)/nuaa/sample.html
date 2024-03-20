@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="National Association of Microbiology" />
+    <meta name="keywords" content="National Association of Microbiology (NAMS IMSU CHAPTER), NAMS IMSU,NAMS(IMSU)" />
+    <link rel="stylesheet" href="style.css" />
+    <title>(NAMS IMSU)Members</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <form id="form">
+                <a Style="font-size: 12px; 
+                width:60px; height: 30px; background-color: red; 
+                color: white; text-decoration: none; 
+                border-radius: 3px; " href="https://mydatabase.com.ng/NAMS(IMSU)/index.html" class="logout">Log Out</a>
+                <input type="text" id="search" class="search" placeholder="Search"><small id="objects"></small>
+            </form>
+        </header>
+        <main id="main" class="mainli">
+        </main>
+    </div>
+    <script src="script.js"></script>
+    <script defer src="js/auth.js"></script>
+    <script defer src="init.js"></script>
+    <script>
+        window.addEventListener("pageshow", function(event) {
+            var historyTraversal = event.persisted,
+                perf = window.performance,
+                perfEntries =
+                perf && perf.getEntriesByType && perf.getEntriesByType("navigation"),
+                perfEntryType = perfEntries && perfEntries[0] && perfEntries[0].type,
+                navigationType = perf && perf.navigation && perf.navigation.type;
+            if (
+                historyTraversal ||
+                perfEntryType === "back_forward" ||
+                navigationType === 2
+            ) {
+                // Handle page restore.
+                window.location.reload();
+            }
+        })
+    </script>
+</body>
+
+</html>
