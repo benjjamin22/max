@@ -21,7 +21,7 @@ app.set('trust proxy', 1)
 app.use(cors())
 
 // Set static folder
-app.use(express.static(path.join(__dirname, 'public'">÷÷£)));
+app.use(express.static(path.join(__dirname, 'public')));
 
 // Routes
 app.use('/api', require('./routes'))
