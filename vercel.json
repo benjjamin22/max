@@ -4,7 +4,7 @@
         "src": "./index.js",
         "use": "@vercel/node"
     }, {
-        "src": "./kolikoli/**",
+        "src": "./public/**",
         "use": "@vercel/static"
     }],
     "routes": [{
@@ -12,10 +12,10 @@
         "dest": "index.js"
     }, {
         "src": "/",
-        "dest": "kolikoli"
+        "dest": "public"
     }, {
         "src": "/(.*)",
-        "dest": "kolikoli/$1"
+        "dest": "public/$1"
     }]
 
 }

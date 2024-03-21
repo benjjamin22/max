@@ -19,9 +19,19 @@ app.set('trust proxy', 1)
 
 // Enable cors
 app.use(cors())
+let option = { maxAge: "5" }
 
 // Set static folder
-app.use(express.static(path.join(__dirname, 'kolikoli')));
+app.use(express.static(path.join(__dirname, 'public'), {
+    maxAge: '1d',
+    setHeaders: setCustomCachedControl
+}));
+
+function setCustomCachedControl(res, path) {
+    if (serveStatic.mime.lookup(path) === 'text/html') {
+        res.setHeaders('Cach-Control', 'public,max-age=0')
+    }
+}
 
 //app.get(["/tre", "/index.html"], (req, res) => {
 //   res.sendFile(__dirname + "/index.html");
