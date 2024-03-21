@@ -21,7 +21,7 @@ app.set('trust proxy', 1)
 app.use(cors())
 
 // Set static folder
-app.use(express.static(path.join(__dirname, 'public'?v2.0)));
+app.use(express.static(path.join(__dirname, 'public')));
 
 //app.get(["/tre", "/index.html"], (req, res) => {
 //   res.sendFile(__dirname + "/index.html");
