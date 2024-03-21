@@ -26,20 +26,13 @@ class Login {
                 };
                 console.log(dat);
 
-                fetch('https://mydatabase.com.ng/NAMS(IMSU)/tg.json')
+                fetch('tg.json')
                     .then((response) => response.json())
                     .then((data) => {
                         if (data.username === dat.username && data.password === dat.password) {
                             localStorage.setItem('user', JSON.stringify(data));
                             localStorage.setItem("auth", 1);
                             this.form.submit();
-                        } else {
-                            this.setStatus(
-                                field,
-                                `${field.previousElementSibling.innerText} incorrect username or password`,
-                                "error"
-                            );
-                            return false;
                         }
                     })
                     .catch((data) => {

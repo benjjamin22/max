@@ -18,8 +18,7 @@
                 <a Style="font-size: 12px; 
                 width:60px; height: 30px; background-color: red; 
                 color: white; text-decoration: none; 
-                border-radius: 3px; " href="https://mydatabase.com.ng/NAMS(IMSU)/index.html" class="logout">Log Out</a>
-                <input type="text" id="search" class="search" placeholder="Search"><small id="objects"></small>
+                border-radius: 3px; " href="https://mydatabase.com.ng/NAMS(IMSU)/index.html" class="logout">Log Out</a><input type="text" id="search" class="search" placeholder="Search"><small id="objects"></small>
             </form>
         </header>
         <main id="main" class="mainli">
@@ -28,21 +27,6 @@
     <script src="script.js"></script>
     <script defer src="js/auth.js"></script>
     <script defer src="init.js"></script>
-    <script>
-        window.addEventListener("pageshow", function(event) {
-            var historyTraversal = event.persisted,
-                perf = window.performance,
-                perfEntries = perf && perf.getEntriesByType && perf.getEntriesByType("navigation"),
-                perfEntryType = perfEntries && perfEntries[0] && perfEntries[0].type,
-                navigationType = perf && perf.navigation && perf.navigation.type;
-            if (
-                historyTraversal || perfEntryType === "back_forward" || navigationType === 2
-            ) {
-                // Handle page restore.
-                window.location.reload();
-            }
-        })
-    </script>
 </body>
 
 </html>

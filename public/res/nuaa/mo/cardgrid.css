@@ -28,7 +28,7 @@ body {
 
 .profile-top {
     background-color: rgb(27, 27, 97);
-    padding: .5rem;
+    padding: .5rem 2rem;
     text-align: center;
     color: white;
     border-radius: 0px;
@@ -81,6 +81,46 @@ body {
     align-items: center;
     max-width: 95%;
     justify-content: center;
+}
+
+.social {
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    width: 75%;
+    margin-left: 2.5rem;
+    padding: 0 0rem;
+}
+
+.social a {
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 1.7em;
+    height: 1.7em;
+    background-color: red;
+    border-radius: 50%;
+    font-size: 2em;
+    color: #dcdcdc;
+    box-shadow: rgb(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 03)0px 8px 16px -8px;
+}
+
+.social a:nth-child(1) {
+    background-color: rgb(28, 88, 158);
+}
+
+.social a:nth-child(2) {
+    background: color #fc01cd;
+    ;
+}
+
+.social a:nth-child(3) {
+    background-color: #313131;
+}
+
+.social a:nth-child(4) {
+    background-color: rgb(28, 88, 158);
 }
 
 .profile-info h1 {

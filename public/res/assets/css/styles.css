@@ -71,32 +71,6 @@ main>div span {
     color: #717171;
 }
 
-main img {
-    height: 80px;
-    width: 80px;
-    border-radius: 50px;
-    margin-top: -30px;
-    justify-content: center;
-    position: relative;
-    margin: auto;
-    column-gap: 0rem;
-    text-align: center;
-    justify-content: center;
-    margin-bottom: 0%;
-}
-
-main p {
-    font-weight: bolder;
-    font-size: 20px;
-}
-
-main h1 {
-    font-size: 2.4rem;
-    line-height: 40px;
-    margin: 1px 0px;
-    font-weight: bolder;
-}
-
 .container.flip {
     animation: flipdiv 2s infinite;
 }

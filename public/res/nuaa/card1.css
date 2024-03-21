@@ -8,15 +8,19 @@
 body {
     height: 100vh;
     display: flex;
-    flex-direction: column;
     align-items: center;
+    justify-content: center;
     font-family: 'Roboto Condensed', sans-serif;
     margin: 0;
-    background-color: #dcdcdc;
+    background-color: red;
 }
 
 .user-profile {
-    background-color: #dcdcdc;
+    background-color: black;
+    background-image: url('./bkg.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100%;
     width: 25.5rem;
     max-width: 30rem;
     border-radius: .5rem;
@@ -24,10 +28,10 @@ body {
     margin: 0px auto;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
     flex-wrap: wrap;
+    height: 41rem;
 }
 
 .profile-top {
-    background-color: rgb(27, 27, 97);
     padding: .5rem;
     text-align: center;
     color: white;
@@ -35,17 +39,19 @@ body {
 }
 
 .profile-top img {
-    border-radius: 5%;
+    border-radius: 15%;
     border: 0px solid white;
-    height: 22em;
-    width: 19rem;
+    height: 264px;
+    width: 206px;
     object-fit: cover;
-    margin-top: 0px;
+    margin-top: 33px;
+    margin-left: 185px;
 }
 
 .profile-top .profile-info {
     margin-top: 0rem;
-    color: rgb(235, 223, 223);
+    color: black;
+    margin-left: 170px;
 }
 
 .profile-bottom {
