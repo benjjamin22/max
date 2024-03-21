@@ -1,7 +1,7 @@
 const search = document.getElementById('search');
 const main = document.getElementById('main');
 const form = document.getElementById('form')
-url = 'https://mydatabase.com.ng/css/database.notes.json'
+url = '/nams'
 
 const listItems = []
 
