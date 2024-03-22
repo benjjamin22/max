@@ -17,25 +17,3 @@
     </url>
 </urlset>
 
-
-{
-    "version": 2,
-    "builds": [{
-        "src": "./index.js",
-        "use": "@vercel/node"
-    }, {
-        "src": "./public/**",
-        "use": "@vercel/static"
-    }],
-    "routes": [{
-        "src": "/(.*)",
-        "dest": "index.js"
-    }, {
-        "src": "/",
-        "dest": "public"
-    }, {
-        "src": "/(.*)",
-        "dest": "public/$1"
-    }]
-
-}
